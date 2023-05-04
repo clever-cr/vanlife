@@ -1,5 +1,5 @@
-import Footer from "../Layout/Footer";
-import NavBar from "../Layout/NavBar";
+import Footer from "../components/Layout/Footer";
+import NavBar from "../components/Layout/NavBar";
 
 const AboutUs = () => {
   return (

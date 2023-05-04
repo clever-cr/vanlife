@@ -10,7 +10,9 @@ const NavBar = () => {
         <Link to="about" className="hover:underline">
           About
         </Link>
-        <Link className="hover:underline">Vans</Link>
+        <Link className="hover:underline" to="vans">
+          Vans
+        </Link>
       </div>
     </div>
   );
