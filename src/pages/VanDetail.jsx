@@ -1,7 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import NavBar from "../components/Layout/NavBar";
-import Footer from "../components/Layout/Footer";
 
 const VanDetail = () => {
   const [vanDetails, setVanDetails] = useState();
@@ -17,7 +15,6 @@ const VanDetail = () => {
 
   return (
     <div>
-      <NavBar />
       <div>
         {vanDetails ? (
           <div className="px-40 py-5 space-y-6">
@@ -50,7 +47,6 @@ const VanDetail = () => {
           <h2>Loading...</h2>
         )}
       </div>
-      <Footer />
     </div>
   );
 };

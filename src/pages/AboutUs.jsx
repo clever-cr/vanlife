@@ -1,10 +1,6 @@
-import Footer from "../components/Layout/Footer";
-import NavBar from "../components/Layout/NavBar";
-
 const AboutUs = () => {
   return (
     <div>
-      <NavBar />
       <div>
         <img
           src="/images/van.png"
@@ -35,7 +31,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

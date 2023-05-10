@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import NavBar from "../components/Layout/NavBar";
-import Footer from "../components/Layout/Footer";
 import { Link } from "react-router-dom";
 
 const Vans = () => {
@@ -18,7 +16,6 @@ const Vans = () => {
 
   return (
     <div>
-      <NavBar />
       <div className="bg-primary  px-40 py-5 space-y-6">
         <h1 className="text-[#161616] text-[32px] font-bold leading-[33.65px]">
           Explore our van options
@@ -53,8 +50,6 @@ const Vans = () => {
             ))}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };
