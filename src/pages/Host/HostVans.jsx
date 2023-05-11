@@ -6,18 +6,18 @@ const HostVans = () => {
   const getHostVans = async () => {
     const res = await fetch("/api/host/vans");
     const data = await res.json();
-    console.log("data", data);
     setHostVans(data.vans);
   };
+
   useEffect(() => {
     getHostVans();
   }, []);
-  console.log("host vans", hostVans);
+
   return (
     <div>
       <div className="px-[160px] py-5 space-y-6">
         <h1 className="font-bold text-[32px] leading-8">Your listed vans</h1>
-        <div className="">
+        <div>
           {hostVans.length > 0 ? (
             <div className="flex flex-col gap-4">
               {hostVans.map((van) => (
