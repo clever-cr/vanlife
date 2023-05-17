@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="bg-[url('/images/bg.png')] bg-cover bg-no-repeat text-white px-56 pt-56  h-[610px]">
@@ -12,9 +13,12 @@ const Hero = () => {
           </p>
         </div>
 
-        <button className="bg-[#FF8C38] rounded-[5px] px-28 py-2 text center">
+        <Link
+          to="/vans"
+          className="bg-[#FF8C38] rounded-[5px] px-28 py-2 text center"
+        >
           Find your Van{" "}
-        </button>
+        </Link>
       </div>
     </div>
   );

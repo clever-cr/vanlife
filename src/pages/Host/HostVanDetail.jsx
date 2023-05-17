@@ -25,7 +25,7 @@ const HostVanDetail = () => {
 
   return (
     <div className="px-[160px] py-5 space-y-4 h-[540px]">
-      <Link to=".." relative="path" className="flex items-center gap-2">
+      <Link to="/vans" relative="path" className="flex items-center gap-2">
         <BsArrowLeft className="text-[#858585]" />
         <p className="underline"> Back to all vans</p>
       </Link>
