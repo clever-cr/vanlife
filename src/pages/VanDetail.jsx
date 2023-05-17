@@ -1,10 +1,12 @@
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { BsArrowLeft } from "react-icons/bs";
 
 const VanDetail = () => {
   const [vanDetails, setVanDetails] = useState();
-
   const params = useParams();
+  const location = useLocation();
 
   const getVansById = async () => {
     const res = await fetch(`/api/vans/${params.id}`);
@@ -16,8 +18,20 @@ const VanDetail = () => {
     getVansById();
   }, [params.id]);
 
+  const search = location.state?.search || "";
+  const type = location.state?.type || "all";
+  console.log("type", type);
+
   return (
     <div>
+      <Link
+        to={`..${search}`}
+        relative="path"
+        className="flex items-center gap-2 px-[160px] py-5"
+      >
+        <BsArrowLeft className="text-[#858585]" />
+        <p className="underline"> Back to {type} vans</p>
+      </Link>
       {vanDetails ? (
         <div className="px-40 py-5 space-y-6">
           <img className="rounded-lg" src={vanDetails.imageUrl} />

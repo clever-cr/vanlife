@@ -6,6 +6,7 @@ const HostLayout = () => {
     textDecoration: " underline",
     color: "#161616",
   };
+
   return (
     <div className="bg-primary">
       <nav className="px-[160px] space-x-7 py-4 font-medium text-lg leading-6">
