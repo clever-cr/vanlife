@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const AboutUs = () => {
   return (
     <div>
@@ -25,9 +26,12 @@ const AboutUs = () => {
               Our team is full of vanlife enthusiasts who know firsthand the
               magic of touring the world on 4 wheels.
             </h1>
-            <button className="text-base font-bold leading-8 bg-[#161616] text-white px-3 py-2">
+            <Link
+              to="/vans"
+              className="text-base font-bold leading-8 bg-[#161616] text-white px-3 py-2"
+            >
               Explore our vans
-            </button>
+            </Link>
           </div>
         </div>
       </div>

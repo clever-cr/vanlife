@@ -20,7 +20,6 @@ const VanDetail = () => {
 
   const search = location.state?.search || "";
   const type = location.state?.type || "all";
-  console.log("type", type);
 
   return (
     <div>

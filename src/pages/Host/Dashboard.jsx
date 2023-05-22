@@ -7,7 +7,6 @@ const Dashboard = () => {
   const getHostVans = async () => {
     const res = await fetch("/api/host/vans");
     const data = await res.json();
-    console.log("data", data);
     setHostVans(data.vans);
   };
 
