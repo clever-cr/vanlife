@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="bg-[url('/images/bg.png')] bg-cover bg-no-repeat text-white px-56 pt-56  h-[610px]">
