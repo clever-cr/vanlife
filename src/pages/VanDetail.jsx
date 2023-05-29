@@ -17,7 +17,7 @@ const VanDetail = () => {
       <Link
         to={`..${search}`}
         relative="path"
-        className="flex items-center gap-2 px-[160px] py-5"
+        className="flex items-center-2 px-[160px] py-5"
       >
         <BsArrowLeft className="text-[#858585]" />
         <p className="underline"> Back to {type} vans</p>
